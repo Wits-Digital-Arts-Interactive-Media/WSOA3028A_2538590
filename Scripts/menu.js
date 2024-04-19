@@ -2,9 +2,10 @@ console.log ("Hello")
 
 const menuItems = [
 
-    {name: "Blogs", href: "blogs.html"},
-    {name: "Portfolio", href: "portfolio.html"},
-    {name: "Essays", href: "essays.html"},
+    {name: "Blogs", href: "Blogs/week1.html"},
+    {name: "Design", href: "design.html"},
+    {name: "Portfolio", href: "Portfolio/portfolio.html"},
+    {name: "Essays", href: "Essays/essay1.html"},
     {name: "Contact", href: "contact.html"},
 ]
     export function initialise (currentPage){
