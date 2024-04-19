@@ -1,7 +1,7 @@
 console.log ("Hello")
 
 const menuItems = [
-    {name: "Home", href: "index.html"},
+
     {name: "Blogs", href: "blogs.html"},
     {name: "Portfolio", href: "portfolio.html"},
     {name: "Essays", href: "essays.html"},
@@ -9,11 +9,10 @@ const menuItems = [
 ]
     export function initialise (currentPage){
 
-     const nav = document.querySelector("header > nav")
-     const ul = document.createElement ("ul")
-     const li = document.createElement ("li")
-
-     for (let menuItem of MenuItems){
+    const nav = document.querySelector("header > nav")
+    const ul = document.createElement ("ul")
+    const li = document.createElement ("li")
+    for (let menuItem of menuItems){
         const li = document.createElement("li")
         if (currentPage != menuItem.name){
             const a = document.createElement("a")    
@@ -27,7 +26,7 @@ const menuItems = [
     }
      nav.appendChild(ul)
      
-    }
+}
 
    
 
