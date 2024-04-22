@@ -1,5 +1,3 @@
-console.log ("Hello")
-
 const menuItems = [
 
     {name: "Blogs", href: "Blogs/week1.html"},
