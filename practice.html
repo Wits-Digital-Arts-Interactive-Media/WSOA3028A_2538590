@@ -5,44 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Practice</title>
 </head>
-  <body>
+<body>
+    <section id="graphicSlide">
+        <img src="Images/ProductDesign1.jpg" alt="Graphic Design Slide 1" width="500" height="500">
+        <img src="Images/ProductDesign2.jpg" alt="Graphic Design Slide 2" width="500" height="500">
+        <img src="Images/ProductDesign3.jpg" alt="Graphic Design Slide 3" width="500" height="500">
+        <img src="Images/GraphicDesign1.jpg" alt="Graphic Design Slide 3" width="500" height="500">
+    </section>
+
+    <button onclick="previous('graphicSlide')">Previous</button>
+    <button onclick="next('graphicSlide')">Next</button>
 
 
+<section id="interiorSlide">
+        <img src="Images/InteriorDesign1.jpg" alt="Interior Design Slide 1" width="600" height="500">
+        <img src="Images/InteriorDesign2.jpg" alt="Interior Design Slide 2" width="600" height="500">
+        <img src="Images/InteriorDesign3.jpg" alt="Interior Design Slide 3" width="600" height="500">
+    </section>
 
+    <button onclick="previous('interiorSlide')">Previous</button>
+    <button onclick="next('interiorSlide')">Next</button>
 
-      <button onclick="previous()">Previous</button>
-      <button onclick="next()">Next</button>
-
-<script>
-
-  let slides = document.querySelectorAll('#carousel img');
-  let currentSlide = 0;
-
-  function showSlide(slideIndex) {
-
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = 'none';
-    }
-
-    slides[slideIndex].style.display = 'block';
-  }
-
-  function next() {
-    if (currentSlide < slides.length - 1) {
-      currentSlide++;
-    }
-    showSlide(currentSlide);
-  }
-
-  function previous() {
-    if (currentSlide > 0) {
-      currentSlide--;
-    }
-    showSlide(currentSlide);
-  }
-
-  showSlide(currentSlide);
-</script>
-
+    <script src="Scripts/imageSelect.js"></script>
 </body>
 </html>
