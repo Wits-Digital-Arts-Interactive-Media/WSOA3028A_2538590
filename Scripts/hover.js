@@ -4,7 +4,8 @@ const weeks = [
     "Week3Hover", 
     "Week4Hover", 
     "Week6Hover", 
-    "Week8Hover"
+    "Week8Hover",
+    "Week9Hover"
 ];
 
 weeks.forEach(weekId => {

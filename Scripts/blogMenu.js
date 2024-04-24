@@ -5,7 +5,8 @@ const blogItems = [
     { name: "week4", href: "week4.html" },
     { name: "week6", href: "week6.html" },
     { name: "week8", href: "week8.html" },
-    { name: "week9", href: "week9.html" }
+    { name: "week9", href: "week9.html" },
+    { name: "week10", href: "week10.html"}
 ];
 
 export function initialise(currentPage) {
