@@ -8,6 +8,7 @@ const weeks = [
     "Week9Hover"
 ];
 
+
 weeks.forEach(weekId => {
     const weekHover = document.getElementById(weekId);
 
@@ -19,3 +20,4 @@ weeks.forEach(weekId => {
         weekHover.innerText = weekHover.innerText.toLowerCase();
     });
 });
+

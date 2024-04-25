@@ -7,7 +7,7 @@
     <meta name="author" content="Matalame Mamabolo"> 
     <title>Portfolio</title>
     <script type="module">
-        import { initialise } from "./Scripts/menu.js";
+        import { initialise } from "../Scripts/menu.js";
         initialise("Portfolio");
     </script>
 
@@ -16,11 +16,9 @@
 <body>
     <header>
         <h1>My Portfolio</h1>
-        <hr>
         <nav>
            
         </nav>
-        <hr>
     </header>
 
     <main>
@@ -35,10 +33,10 @@
             </p>
             
             <section id="graphicSlide">
-                <img src="Images/ProductDesign1.jpg" alt="Graphic Design Slide 1" width="500" height="500">
-                <img src="Images/ProductDesign2.jpg" alt="Graphic Design Slide 2" width="500" height="500">
-                <img src="Images/ProductDesign3.jpg" alt="Graphic Design Slide 3" width="500" height="500">
-                <img src="Images/GraphicDesign1.jpg" alt="Graphic Design Slide 3" width="500" height="500">
+                <img src="../Images/ProductDesign1.jpg" alt="Graphic Design Slide 1" width="500" height="500">
+                <img src="../Images/ProductDesign2.jpg" alt="Graphic Design Slide 2" width="500" height="500">
+                <img src="../Images/ProductDesign3.jpg" alt="Graphic Design Slide 3" width="500" height="500">
+                <img src="../Images/GraphicDesign1.jpg" alt="Graphic Design Slide 3" width="500" height="500">
             </section>
         
             <button onclick="previous('graphicSlide')">Previous</button>
@@ -53,15 +51,15 @@
             </p>
 
             <section id="interiorSlide">
-                <img src="Images/InteriorDesign1.jpg" alt="Interior Design Slide 1" width="800" height="500">
-                <img src="Images/InteriorDesign2.jpg" alt="Interior Design Slide 2" width="800" height="500">
-                <img src="Images/InteriorDesign3.jpg" alt="Interior Design Slide 3" width="800" height="500">
+                <img src="../Images/InteriorDesign1.jpg" alt="Interior Design Slide 1" width="800" height="500">
+                <img src="../Images/InteriorDesign2.jpg" alt="Interior Design Slide 2" width="800" height="500">
+                <img src="../Images/InteriorDesign3.jpg" alt="Interior Design Slide 3" width="800" height="500">
             </section>
         
             <button onclick="previous('interiorSlide')">Previous</button>
             <button onclick="next('interiorSlide')">Next</button>
 
-            <script src="Scripts/imageSelect.js"></script>
+            <script src="../Scripts/imageSelect.js"></script>
 
         </section>
 
@@ -71,7 +69,7 @@
     <footer>
         <section style="height: 50px;"></section>
         <button id="backToTopBtn">Back to Top</button>
-        <script src="./Scripts/topbutton.js" defer></script>
+        <script src="../Scripts/topbutton.js" defer></script>
     </footer>
 
 </body>

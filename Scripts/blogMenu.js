@@ -1,5 +1,5 @@
 const blogItems = [
-    { name: "week1", href: "week1.html"},
+    { name: "week1", href: "week1.html" },
     { name: "week2", href: "week2.html" },
     { name: "week3", href: "week3.html" },
     { name: "week4", href: "week4.html" },
