@@ -1,13 +1,15 @@
-//const root = "WSOA3028A_2538590";
+const root = "/WSOA3028A_2538590";
 
 const menuItems = [
-    { name: "Home", href:  "/index.html"},
-    { name: "Blogs", href: "/Blogs/index.html" },
-    { name: "Design", href: "/Design/index.html" },
-    { name: "Portfolio", href: "/Portfolio/index.html"},
-    { name: "Essays", href: "/Essays/index.html" },
-    { name: "Contact", href: "/Contact/index.html" },
+    { name: "Home", href: root + "/index.html"},
+    { name: "Blogs", href: `${root}/Blogs/index.html` },
+    { name: "Design", href: `${root}/Design/index.html` },
+    { name: "Portfolio", href: `${root}/Portfolio/index.html` },
+    { name: "Essays", href: `${root}/Essays/index.html` },
+    { name: "Contact", href: `${root}/Contact/index.html` },
+    { name: "Practice", href: `${root}/practice.html` },
 ];
+
 
 export function initialise(currentPage) {
     const nav = document.querySelector("header > nav");
