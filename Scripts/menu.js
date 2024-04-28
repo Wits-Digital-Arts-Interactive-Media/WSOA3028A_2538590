@@ -1,10 +1,12 @@
+const root = "WSOA3028A_2538590";
+
 const menuItems = [
-    { name: "Home", href: "/index.html"},
-    { name: "Blogs", href: "/Blogs/index.html" },
-    { name: "Design", href: "/Design/design.html" },
-    { name: "Portfolio", href: "/Portfolio/portfolio.html" },
-    { name: "Essays", href: "/Essays/index.html" },
-    { name: "Contact", href: "/Contact/contact.html" },
+    { name: "Home", href: root + "/index.html"},
+    { name: "Blogs", href: `${root}/Blogs/index.html` },
+    { name: "Design", href: `${root}/Design/design.html` },
+    { name: "Portfolio", href: `${root}/Portfolio/portfolio.html` },
+    { name: "Essays", href: `${root}/Essays/index.html` },
+    { name: "Contact", href: `${root}/Contact/contact.html` },
 ];
 
 export function initialise(currentPage) {
