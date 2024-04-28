@@ -5,7 +5,9 @@ const weeks = [ // Declares an array for the different weeks and stores their Id
     "Week4Hover", 
     "Week6Hover", 
     "Week8Hover", 
-    "Week9Hover" 
+    "Week9Hover",
+    "Week10Hover",
+    "LecturesHover"
 ];
 
 weeks.forEach(weekId => { 

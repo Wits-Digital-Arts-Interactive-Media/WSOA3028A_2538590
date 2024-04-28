@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="module" > import {initialise} from "../Scripts/menu.js" 
+        initialise ("Blogs")
+    </script>
+    
+    <script type="module" > import {initialise} from "../Scripts/blogMenu.js" 
+        initialise ("Lectures")
+    </script>
+
+
+</head>
+<body>
+    <header>
+        <h1>Lecture Content</h1>
+                <nav>
+                    
+                </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Lecture Notes</h2>
+            <h3> JavaScript Fundamentals Part 1: </h3>
+            
+            <p> It's a dynamic language, it's interpreted them complied, then executed. These languages are designed for human beings.</p>
+            <p>Rule 1: Don't break the internet!</p>
+            <P> Consider 'Type Coercion': it's going to try to figure out, based on the stuff you give it what the best possible type is it for that thing</P>
+            <p>It's a asynchronicity language, its more efficient because it only has one thread, whenever a function is called it puts it at the end of the heap
+            whenever a function is called it puts it at the end of the heap, and constantly runs through all these things. </p>
+            <p> Scope: if you use 'this' to your local context of either the function you're executing in, the class you're executing in or the module 
+            in JavaScript you can refer to 'this' into anything you want. </p>
+
+            <h3> There are three variables: </h3>
+                <ul> 
+                   <li> Var - old school variable, gets assigned as a global state. Mike: "DON'T USE IT"</li>
+                   <li> let - modern 'var', you can't refine 'let' </li> 
+                   <li> const - you can only assign those variables once, you can't redifine them</li>
+                </ul>
+
+            <h3>There are 8 types of data types: </h3>
+                <ul>
+                    <li> Numbers: An integer or floating point number. E.g 42 or 4.14160</li>
+                    <li> Boolean: True or False </li>
+                    <li> null: a special keyboard denoting a null value because JS is case- sensitive</li>
+                    <li> undefined: a top-level property whose value is not defined </li>
+                    <li> BigInt: an integer with arbitary precision. E.g 9000365786798n </li>
+                    <li> String: a sequence of characters that represent a text value. E.g "Howdy"</li>
+                    <li> Symbol: A data type whose instances are unique and immutable. </li>
+                </ul>
+            <h3> Falsey values:</h3>
+                <ul>
+                    <li> false </li>
+                    <li> null </li>
+                    <li> undefined </li>
+                    <li> 0 </li>
+                    <li> "" - Empty String </li>
+                    <li> [] - Empty Array </li>
+                    <li> '=' - an assignment, setting the one to the another</li>
+                    <li> '==' - a coersive quality, it's going to try to find what the best type difference between those two things is</li>
+                    <li> '===' - comparison : you can't use them with 'object'</li>
+                </ul>
+
+            <h3> Functions:</h3>
+            <p> functions are essentially tiny bits of code that we know we are going to use over and over again, instead of copying and 
+            pasting that code, we instead create a function we can simply call. </p>
+
+            <h3> Objects: </h3>
+            <p> a collection of related data, which usually consists of similar variables and functions. Functions that are a part of the object
+            are called 'methods'</p>
+
+            <h3> The difference between undefined and null: </h3>
+            <p>' undefined means that this thing has not yet been assigned, basically we've created this thing in memory but its not actually 
+            pointing to anything' </p>
+
+            <h3> Classes: </h3>
+            <p> its like a blueprint of what an object will look like, then we crease instance s of that class.</p>
+
+        </article>
+
+        <article>
+            <h3> Recorded lecture: Internet, Society, and Design Justice </h3>
+            <p> The image shows a full body scan. That presents two buttons: pink and blue, that help distinguish between male and female.
+            In the past the renders of the full body scans were explicit, making it a very invasive design. It dismisses people in the margins.
+            Its designed for a particular type of person.</p>
+            <p> Hanli: 'Design here is not simply aesthetics for UI, it is system design, graphic design, UI and the interaction of how these
+            things relate.'</p>
+            <p>The Design Justice Network principles sees the design as something that should deeply be 'community involved' and argues that 
+            they aren't an expert on the society group they designing for.</p>
+            <p> 'Design is collaborative' </p>
+            <p> Questions to ask: Did you see what's alreadu in place? What's already working? What was the engagement with the people you are 
+            designing for?</p>
+            <p> People from the margins often reproduce, replicate and act in the same notion of validity. Its to establish new validities.</p>
+    
+        </article>
+    </main>
+
+    <script type="module" src="../Scripts/hover.js"> </script>
+
+    <footer>
+        <section style="height: 50px;"></section>
+        <button id="backToTopBtn">Back to Top</button>
+        <script src="../Scripts/topbutton.js" defer></script>
+        <p> Brought to you by Matalame Mamabolo</p>
+    </footer>
+    
+</body>
+</html
