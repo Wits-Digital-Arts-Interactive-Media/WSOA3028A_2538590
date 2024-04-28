@@ -3,29 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Practice</title>
+<title>Poll</title>
 </head>
 <body>
-    <section id="graphicSlide">
-        <img src="Images/ProductDesign1.jpg" alt="Graphic Design Slide 1" width="500" height="500">
-        <img src="Images/ProductDesign2.jpg" alt="Graphic Design Slide 2" width="500" height="500">
-        <img src="Images/ProductDesign3.jpg" alt="Graphic Design Slide 3" width="500" height="500">
-        <img src="Images/GraphicDesign1.jpg" alt="Graphic Design Slide 3" width="500" height="500">
-    </section>
 
-    <button onclick="previous('graphicSlide')">Previous</button>
-    <button onclick="next('graphicSlide')">Next</button>
+<h2>What is your favorite programming language?</h2>
 
+<form id="pollForm">
+  <input type="radio" name="language" value="JavaScript"> JavaScript<br>
+  <input type="radio" name="language" value="Python"> Python<br>
+  <input type="radio" name="language" value="Java"> Java<br>
+  <input type="radio" name="language" value="C++"> C++
 
-<section id="interiorSlide">
-        <img src="Images/InteriorDesign1.jpg" alt="Interior Design Slide 1" width="600" height="500">
-        <img src="Images/InteriorDesign2.jpg" alt="Interior Design Slide 2" width="600" height="500">
-        <img src="Images/InteriorDesign3.jpg" alt="Interior Design Slide 3" width="600" height="500">
-    </section>
-
-    <button onclick="previous('interiorSlide')">Previous</button>
-    <button onclick="next('interiorSlide')">Next</button>
-
-    <script src="Scripts/imageSelect.js"></script> 
-</body>
-</html>

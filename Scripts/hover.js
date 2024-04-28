@@ -8,7 +8,6 @@ const weeks = [
     "Week9Hover"
 ];
 
-
 weeks.forEach(weekId => {
     const weekHover = document.getElementById(weekId);
 
@@ -17,7 +16,8 @@ weeks.forEach(weekId => {
     });
 
     weekHover.addEventListener("mouseout", event => {
-        weekHover.innerText = weekHover.innerText.toLowerCase();
+        const text = weekHover.innerText.toLowerCase();
+        weekHover.innerText = text.charAt(0).toUpperCase() + text.slice(1);
     });
 });
 
