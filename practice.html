@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Poll</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Message</title>
 </head>
 <body>
+    <div id="welcome">
+        <h1>Welcome to the Website</h1>
+        <label for="username">Enter your name:</label>
+        <input type="text" id="username">
+        <button onclick="greetUser()">Submit</button>
+        <p id="greeting"></p>
+    </div>
 
-<h2>What is your favorite programming language?</h2>
-
-<form id="pollForm">
-  <input type="radio" name="language" value="JavaScript"> JavaScript<br>
-  <input type="radio" name="language" value="Python"> Python<br>
-  <input type="radio" name="language" value="Java"> Java<br>
-  <input type="radio" name="language" value="C++"> C++
-
+    <script>
+        // Function to greet the user
+        function greetUser() {
+            var userName = document.getElementById("username").value.trim();
+            if (userName) {
+                document.getElementById("greeting").textContent = "Hey, " + userName + "! Welcome to the website. I hope you enjoy your stay!";
+            }
+        }
+    </script>
+</body>
+</html>
