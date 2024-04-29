@@ -6,7 +6,7 @@ const menuItems = [
     { name: "Design", href: `${root}/Design/index.html` },
     { name: "Portfolio", href: `${root}/Portfolio/index.html` },
     { name: "Essays", href: `${root}/Essays/index.html` },
-    { name: "Contact", href: `${root}/Contact/index.html` },
+    { name: "About Me", href: `${root}/AboutMe/index.html` },
 ];
 
 

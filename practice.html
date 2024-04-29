@@ -1,37 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Message</title>
-
-    <script type="module">
-        import { initialise } from "./Scripts/menu.js";
-        initialise("Practice");
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Facts Generator</title>
 </head>
 <body>
-    <header>
-        <nav>
-            
-        </nav>
-    </header>
-    <div id="welcome">
-        <h1>Welcome to the Website</h1>
-        <label for="username">Enter your name:</label>
-        <input type="text" id="username">
-        <button onclick="greetUser()">Submit</button>
-        <p id="greeting"></p>
-    </div>
-
-    <script>
-        // Function to greet the user
-        function greetUser() {
-            var userName = document.getElementById("username").value.trim();
-            if (userName) {
-                document.getElementById("greeting").textContent = "Hey, " + userName + "! Welcome to the website. I hope you enjoy your stay!";
-            }
-        }
-    </script>
+ 
 </body>
 </html>
