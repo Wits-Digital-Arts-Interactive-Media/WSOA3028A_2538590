@@ -5,19 +5,33 @@ function showSlide(slideId, slideIndex) { //This function uses the specific slid
     }
 }
 
-function next(slideId) { //displays the next image in the slide show
+function next(slideId) {
     const slides = document.querySelectorAll(`#${slideId} img`);
     let currentSlide = getCurrentSlideIndex(slides);
-    currentSlide = (currentSlide + 1) % slides.length; //
+    
+    
+    if (currentSlide === slides.length - 1) {// Checks if the current slide is already the last one
+        return;
+    
+    } else {
+        currentSlide = currentSlide + 1;
+    }
     showSlide(slideId, currentSlide); //displays the next slide
 }
+
 
 function previous(slideId) {
     const slides = document.querySelectorAll(`#${slideId} img`);
     let currentSlide = getCurrentSlideIndex(slides);
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    if (currentSlide === 0) {
+        return;
+        
+    } else {
+        currentSlide = currentSlide - 1;
+    }
     showSlide(slideId, currentSlide); //displays the previous slide
 }
+
 
 function getCurrentSlideIndex(slides) {
     for (let i = 0; i < slides.length; i++) {

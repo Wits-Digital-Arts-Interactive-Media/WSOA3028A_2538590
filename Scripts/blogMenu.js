@@ -19,7 +19,7 @@ export function initialise(currentPage) {
         const a = document.createElement("a");
         let weekId = `Week${index + 1}Hover`; // Generate ID based on index
 
-        if (blogItem.name.toLowerCase() === "Lectures") {//Specific to the 'Lectures Tag
+        if (blogItem.name.toLowerCase() === "Lectures") {//Specific to the 'Lectures' id
             weekId = "LecturesHover"; 
         }
 
