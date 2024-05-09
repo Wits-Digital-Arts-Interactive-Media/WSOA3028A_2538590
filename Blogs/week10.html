@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Matalame's website for Interactive Media WSOA3028A">
     <meta name="author" content="Matalame Mamabolo">
+    <meta name="keywords" content="Interactive Media, Matalame Mamabolo, Week 10, WSOA3028A, Wits">
     <meta property="og:title" content="Matalame Mamabolo: Week 10">
     <meta property="og:description" content="The digital life and work of Matalame Mamabolo.">
     <meta property="og:type" content="First website">
@@ -16,7 +17,7 @@
         </script>
 
     <script type="module" > import {initialise} from "../Scripts/blogMenu.js" 
-        initialise ("week10")
+        initialise ("Week10")
     </script>
 
 </head>
@@ -96,7 +97,17 @@
                 <section style="height: 50px;"></section>
                 <button id="backToTopBtn">Back to Top</button>
                 <script src="../Scripts/topbutton.js" defer></script>
+                <hr>
+
+                <button id="prev">Previous</button>
+                <button id="next">Next</button>
+                <script>
+                window.currentIndex = 7;
+                </script>
+                <script src="../Scripts/previousNext.js" defer></script>
                 <p> Brought to you by Matalame Mamabolo</p>
+                
+                <hr>
             </footer>
             
         </article>

@@ -1,12 +1,12 @@
 const blogItems = [
-    { name: "week1", href: "week1.html" },
-    { name: "week2", href: "week2.html" },
-    { name: "week3", href: "week3.html" },
-    { name: "week4", href: "week4.html" },
-    { name: "week6", href: "week6.html" },
-    { name: "week8", href: "week8.html" },
-    { name: "week9", href: "week9.html" },
-    { name: "week10", href: "week10.html"},
+    { name: "Week1", href: "week1.html" },
+    { name: "Week2", href: "week2.html" },
+    { name: "Week3", href: "week3.html" },
+    { name: "Week4", href: "week4.html" },
+    { name: "Week6", href: "week6.html" },
+    { name: "Week8", href: "week8.html" },
+    { name: "Week9", href: "week9.html" },
+    { name: "Week10", href: "week10.html"},
     { name: "Lectures", href: "lectures.html"}
 ];
 
