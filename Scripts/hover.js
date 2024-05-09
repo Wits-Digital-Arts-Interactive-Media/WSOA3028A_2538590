@@ -7,6 +7,7 @@ const weeks = [ // Declares an array for the different weeks and stores their Id
     "Week8Hover", 
     "Week9Hover",
     "Week10Hover",
+    "Week11Hover",
     "LecturesHover"
 ];
 

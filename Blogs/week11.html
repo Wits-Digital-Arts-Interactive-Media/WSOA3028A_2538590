@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Matalame's website for Interactive Media WSOA3028A">
+    <meta name="author" content="Matalame Mamabolo">
+    <meta name="keywords" content="Interactive Media, Matalame Mamabolo, Week 11, WSOA3028A, Wits">
+    <meta property="og:title" content="Matalame Mamabolo: Week 11">
+    <meta property="og:description" content="The digital life and work of Matalame Mamabolo.">
+    <meta property="og:type" content="First website">
+
+    <title>Week 11</title>
+
+    <script type="module" > import {initialise} from "../Scripts/menu.js" 
+        initialise ("Blogs")
+        </script>
+
+    <script type="module" > import {initialise} from "../Scripts/blogMenu.js" 
+        initialise ("Week11")
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Weekly Blogposts</h1>
+            <nav>
+                    
+            </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Week 11: Blog Post</h2>
+            <h3>What changes have I made to my website to incorporate JavaScript?</h3>
+            <p> When I went through the JavaScript lectures, I found how flexible JavaScript is compared to HTML. There were new things to 
+            learn and I would’ve wanted to incorporate much more but I was limited because most of the resources from YouTube and dev websites 
+            used CSS which was not required in website 2.</p>
+
+            <p>I faced a problem with the menu page, my website navigation was working and for some reason stopped working the day before 
+            submission. Through the help of my peers, we saw the problem came from where the folder was located, it was located within the
+            OneDrive cloud, which created a long path that GitHub was struggling to find, but once we moved the project to the :C drive, 
+            the path was easier to find. </p>
+
+            <p>Menu: Hanli provided us with a script that helped instantiate menu components into our nav tag. The script included the 
+            different pages present in the website which were: Home, Blogs, Design, Portfolio and ‘About Me’.</p>
+
+            <p>Text Hover: For the blog page menu that included the navigation for the different weeks, whenever the user hovers over the 
+            text it changes to upper case from lower case.</p>
+
+            <p>Random Fact Generator: On the ‘About Me’ page there’s a button that generates random strings that contain information about 
+            me for example “I am a car guy” or “I am a student at the University of Witwatersrand”.</p>
+
+            <p>Image Carousel or Slideshow: On the portfolio page, there’s a section that allows the user to change in-between images, using 
+            the ‘next’ and ‘previous’ buttons.</p>
+
+            <p>Back-to-top button: At the bottom of the pages (footer), once the user is done engaging with the content, they can press the
+            ‘back to top’ button to navigate back to the header of the page.</p>
+
+            <h3>How does that help you streamline your interaction design?</h3>
+
+            <p>Regarding my user flow there is a smooth and intuitive navigation, that allows the user to make their way through the website, 
+            deciding which page they would want to go to or back to, without receiving 404 errors, or wrong links to wrong pages. Regarding 
+            the wireframes, I added new wireframes with the potential colour scheme I would want to use. It would be better to use CSS to 
+            execute the wireframes. Then with feedback and response, there’s feedback that is present in the interface buttons, that show the 
+            user the output of the input they put in, for example pressing the ‘Generate facts’ button, that offers a new string each time its 
+            pressed. Lastly, consistency. There’s a ‘back to top’ button on every page that has a lot of content and a lot of scrolling to do. 
+            Another form of consistency would be the navigation present on the website, that allows users to navigate through their desired page.</p>
+
+        </article>
+    </main>
+
+    <footer>
+        <section style="height: 50px;"></section>
+        <button id="backToTopBtn">Back to Top</button>
+        <script src="../Scripts/topbutton.js" defer></script>
+        <hr>
+
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+        <script>
+        window.currentIndex = 8;
+        </script>
+        <script src="../Scripts/previousNext.js" defer></script>
+        <p> Brought to you by Matalame Mamabolo</p>
+        
+        <hr>
+    </footer>
+
+</body>
+
+</html>

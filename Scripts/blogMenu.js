@@ -7,6 +7,7 @@ const blogItems = [
     { name: "Week8", href: "week8.html" },
     { name: "Week9", href: "week9.html" },
     { name: "Week10", href: "week10.html"},
+    { name: "Week11", href: "week11.html"},
     { name: "Lectures", href: "lectures.html"}
 ];
 
