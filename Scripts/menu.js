@@ -13,6 +13,7 @@ const menuItems = [
 export function initialise(currentPage) {
     const nav = document.querySelector("header > nav");
     const ul = document.createElement("ul");
+    ul.className = "nav__links";
 
     for (let menuItem of menuItems) {
         const li = document.createElement("li");

@@ -16,7 +16,9 @@
         initialise("Portfolio");
     </script>
 
-    
+    <link rel = "stylesheet" href = "../Styles/navigationBar.css">
+    <link rel = "stylesheet" href = "../Styles/portfolioPage.css">
+
 </head>
 <body>
     <header>
@@ -26,55 +28,38 @@
         </nav>
     </header>
 
-    <main>
-        <p>As I've stated, I have had my fair share of experience with different types of design and I will use this page to showcase 
-            the work I've done. These are some of my favourites and I hope you'll love them as much as I do. 
-        </p>
+    <div class = "card-container">
+        <div class = "card"> 
+            <img src = "../Images/GraphicDesign1.jpg">
+            <div class = "card-content">
+                <h3>Graphic Design</h3>
+                <p> These are some of the graphic design works I made. As you can see, these include product design and poster design. I 
+                managed to make these with 1 year of experience with Adobe Photoshop. I really hope to continue to grow and improve my 
+                skills.</p>
+                <a href = "" class = "btn">See More</a>
+            </div>
+        </div>
 
-        <section>
-            <h2>Graphic Design</h2>
-            <p>These are some of the graphic design works I made. As you can see, these include product design and poster design. I managed 
-                to make these with 1 year of experience with Adobe Photoshop. I really hope to continue to grow and improve my skills.
-            </p>
-            
-            <section id="graphicSlide">
-                <img src="../Images/ProductDesign1.jpg" alt="Graphic Design Slide 1" width="500" height="500">
-                <img src="../Images/ProductDesign2.jpg" alt="Graphic Design Slide 2" width="500" height="500">
-                <img src="../Images/ProductDesign3.jpg" alt="Graphic Design Slide 3" width="500" height="500">
-                <img src="../Images/GraphicDesign1.jpg" alt="Graphic Design Slide 3" width="500" height="500">
-            </section>
-        
-            <button onclick="previous('graphicSlide')">Previous</button>
-            <button onclick="next('graphicSlide')">Next</button>
-               
-        </section>
+        <div class = "card"> 
+            <img src = "../Images/InteriorResponsive.jpg">
+            <div class = "card-content">
+                <h3>Interior Design</h3>
+                <p> These are my Interior and Architectural designs. I have a thing for buildings and their functionality and what can be 
+                done to any empty room to make it more aesthetically pleasing and user-friendly for the people who occupy the space. Each 
+                environment has a story to tell.</p>
+                <a href = "" class = "btn">See More</a>
+            </div>
+        </div>
 
-        <section>
-            <h2>Interior Design</h2>
-            <p>These are my Interior and Architectural designs. I have a thing for buildings and their functionality and what can be done
-                to any empty room to make it more aesthetically pleasing and user-friendly for the people who occupy the space.
-            </p>
-
-            <section id="interiorSlide">
-                <img src="../Images/InteriorDesign1.jpg" alt="Interior Design Slide 1" width="800" height="500">
-                <img src="../Images/InteriorDesign2.jpg" alt="Interior Design Slide 2" width="800" height="500">
-                <img src="../Images/InteriorDesign3.jpg" alt="Interior Design Slide 3" width="800" height="500">
-            </section>
-        
-            <button onclick="previous('interiorSlide')">Previous</button>
-            <button onclick="next('interiorSlide')">Next</button>
-
-        </section>
-
+    </div>
         <script src="../Scripts/imageSelect.js"></script>
 
-        <p>For more designs check my page on Instagram <a href="https://www.instagram.com/esteemcreations">@esteemcreations</a></p>
     </main>
 
     <footer>
         <section style="height: 50px;"></section>
-        <button id="backToTopBtn">Back to Top</button>
-        <script src="../Scripts/topbutton.js" defer></script>
+        <!-- <button id="backToTopBtn">Back to Top</button>
+        <script src="../Scripts/topbutton.js" defer></script> -->
         <hr>
         <p> Brought to you by Matalame Mamabolo</p>
     </footer>
