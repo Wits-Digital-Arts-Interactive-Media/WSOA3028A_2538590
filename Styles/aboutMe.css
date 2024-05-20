@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 .about-me {
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
     max-width: 800px; /* Set a maximum width for the section */
-    margin: 0 auto; /* Center the section horizontally */
-    text-align: center; /* Center all text inside the section */
+    margin-left: 100px;
+    text-align: left; /* Center all text inside the section */
 }
 
 .about-me h2 {
@@ -28,12 +28,12 @@
 .about-me figure {
     margin-top: 20px;
     text-align: center;
-}
+} 
 
-/* .about-me img {
+.about-me img {
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-} */
+} 
 
 body{
     background-color: #182b4d;
