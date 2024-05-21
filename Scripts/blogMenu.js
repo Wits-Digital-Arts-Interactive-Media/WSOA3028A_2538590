@@ -8,6 +8,8 @@
 //     { name: "Week9", href: "week9.html" },
 //     { name: "Week10", href: "week10.html"},
 //     { name: "Week11", href: "week11.html"},
+//     { name: "Week12", href: "week12.html"},
+//     { name: "Week13", href: "week13.html"},
 //     { name: "Lectures", href: "lectures.html"}
 // ];
 
