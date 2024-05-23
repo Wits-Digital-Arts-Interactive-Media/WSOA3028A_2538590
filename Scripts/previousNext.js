@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const pages = [
         "week1.html", "week2.html", "week3.html", "week4.html",
-        "week6.html", "week8.html", "week9.html", "week10.html","week11.html", "lectures.html"
+        "week6.html", "week8.html", "week9.html", "week10.html",
+        "week11.html", "week12.html", "week13.html", "lectures.html"
     ];
 
     

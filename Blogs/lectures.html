@@ -21,6 +21,7 @@
 
     <link rel = "stylesheet" href = "../Styles/navigationBar.css">
     <link rel="stylesheet" href="../Styles/blogsPage.css"> 
+    <link rel = "stylesheet" href = "../Styles/blogStyle.css">
 
 </head>
 <body>
@@ -47,110 +48,109 @@
     </div>
    
     <main>
-        <article>
+        <article class = "BlogContent">
             <h1>Lecture Notes</h1>
             <h2> JavaScript Fundamentals Part 1: </h2>
             
-            <p> It's a dynamic language, it's interpreted them complied, then executed. These languages are designed for human beings.</p>
-            <p>Rule 1: Don't break the internet!</p>
-            <P> Consider 'Type Coercion': it's going to try to figure out, based on the stuff you give it what the best possible type is it for that thing</P>
-            <p>It's a asynchronicity language, its more efficient because it only has one thread, whenever a function is called it puts it at the end of the heap
-            whenever a function is called it puts it at the end of the heap, and constantly runs through all these things. </p>
-            <p> Scope: if you use 'this' to your local context of either the function you're executing in, the class you're executing in or the module 
-            in JavaScript you can refer to 'this' into anything you want. </p>
+            <section> 
+                <p> It's a dynamic language, it's interpreted them complied, then executed. These languages are designed for human beings.</p>
+                <p>Rule 1: Don't break the internet!</p>
+                <P> Consider 'Type Coercion': it's going to try to figure out, based on the stuff you give it what the best possible type is it for that thing</P>
+                <p>It's a asynchronicity language, its more efficient because it only has one thread, whenever a function is called it puts it at the end of the heap
+                whenever a function is called it puts it at the end of the heap, and constantly runs through all these things. </p>
+                <p> Scope: if you use 'this' to your local context of either the function you're executing in, the class you're executing in or the module 
+                in JavaScript you can refer to 'this' into anything you want. </p>
 
-            <h2> There are three variables: </h2>
-                <ul> 
-                   <li> Var - old school variable, gets assigned as a global state. Mike: "DON'T USE IT"</li>
-                   <li> let - modern 'var', you can't refine 'let' </li> 
-                   <li> const - you can only assign those variables once, you can't redifine them</li>
-                </ul>
+                <h2> There are three variables: </h2>
+                    <ul> 
+                    <li> Var - old school variable, gets assigned as a global state. Mike: "DON'T USE IT"</li>
+                    <li> let - modern 'var', you can't refine 'let' </li> 
+                    <li> const - you can only assign those variables once, you can't redifine them</li>
+                    </ul>
 
-            <h2>There are 8 types of data types: </h2>
-                <ul>
-                    <li> Numbers: An integer or floating point number. E.g 42 or 4.14160</li>
-                    <li> Boolean: True or False </li>
-                    <li> null: a special keyboard denoting a null value because JS is case- sensitive</li>
-                    <li> undefined: a top-level property whose value is not defined </li>
-                    <li> BigInt: an integer with arbitary precision. E.g 9000365786798n </li>
-                    <li> String: a sequence of characters that represent a text value. E.g "Howdy"</li>
-                    <li> Symbol: A data type whose instances are unique and immutable. </li>
-                </ul>
-            <h2> Falsey values:</h2>
-                <ul>
-                    <li> false </li>
-                    <li> null </li>
-                    <li> undefined </li>
-                    <li> 0 </li>
-                    <li> "" - Empty String </li>
-                    <li> [] - Empty Array </li>
-                    <li> '=' - an assignment, setting the one to the another</li>
-                    <li> '==' - a coersive quality, it's going to try to find what the best type difference between those two things is</li>
-                    <li> '===' - comparison : you can't use them with 'object'</li>
-                </ul>
+                <h2>There are 8 types of data types: </h2>
+                    <ul>
+                        <li> Numbers: An integer or floating point number. E.g 42 or 4.14160</li>
+                        <li> Boolean: True or False </li>
+                        <li> null: a special keyboard denoting a null value because JS is case- sensitive</li>
+                        <li> undefined: a top-level property whose value is not defined </li>
+                        <li> BigInt: an integer with arbitary precision. E.g 9000365786798n </li>
+                        <li> String: a sequence of characters that represent a text value. E.g "Howdy"</li>
+                        <li> Symbol: A data type whose instances are unique and immutable. </li>
+                    </ul>
+                <h2> Falsey values:</h2>
+                    <ul>
+                        <li> false </li>
+                        <li> null </li>
+                        <li> undefined </li>
+                        <li> 0 </li>
+                        <li> "" - Empty String </li>
+                        <li> [] - Empty Array </li>
+                        <li> '=' - an assignment, setting the one to the another</li>
+                        <li> '==' - a coersive quality, it's going to try to find what the best type difference between those two things is</li>
+                        <li> '===' - comparison : you can't use them with 'object'</li>
+                    </ul>
 
-            <h2> Functions:</h2>
-            <p> functions are essentially tiny bits of code that we know we are going to use over and over again, instead of copying and 
-            pasting that code, we instead create a function we can simply call. </p>
+                <h2> Functions:</h2>
+                <p> functions are essentially tiny bits of code that we know we are going to use over and over again, instead of copying and 
+                pasting that code, we instead create a function we can simply call. </p>
 
-            <h2> Objects: </h2>
-            <p> a collection of related data, which usually consists of similar variables and functions. Functions that are a part of the object
-            are called 'methods'</p>
+                <h2> Objects: </h2>
+                <p> a collection of related data, which usually consists of similar variables and functions. Functions that are a part of the object
+                are called 'methods'</p>
 
-            <h2> The difference between undefined and null: </h3>
-            <p>' undefined means that this thing has not yet been assigned, basically we've created this thing in memory but its not actually 
-            pointing to anything' </p>
+                <h2> The difference between undefined and null: </h3>
+                <p>' undefined means that this thing has not yet been assigned, basically we've created this thing in memory but its not actually 
+                pointing to anything' </p>
 
-            <h2> Classes: </h2>
-            <p> its like a blueprint of what an object will look like, then we crease instance s of that class.</p>
+                <h2> Classes: </h2>
+                <p> its like a blueprint of what an object will look like, then we crease instance s of that class.</p>
+            </section>
 
-        </article>
+            <section> 
+                <h2> Recorded lecture: Internet, Society, and Design Justice </h2>
 
-        <article>
-            <h2> Recorded lecture: Internet, Society, and Design Justice </h2>
+                <p> The image shows a full body scan. That presents two buttons: pink and blue, that help distinguish between male and female.
+                In the past the renders of the full body scans were explicit, making it a very invasive design. It dismisses people in the margins.
+                Its designed for a particular type of person.</p>
+                <p> Hanli: 'Design here is not simply aesthetics for UI, it is system design, graphic design, UI and the interaction of how these
+                things relate.'</p>
+                <p>The Design Justice Network principles sees the design as something that should deeply be 'community involved' and argues that 
+                they aren't an expert on the society group they designing for.</p>
+                <p> 'Design is collaborative' </p>
+                <p> Questions to ask: Did you see what's alreadu in place? What's already working? What was the engagement with the people you are 
+                designing for?</p>
+                <p> People from the margins often reproduce, replicate and act in the same notion of validity. Its to establish new validities.</p>
+        
+            </section>>
 
-            <p> The image shows a full body scan. That presents two buttons: pink and blue, that help distinguish between male and female.
-            In the past the renders of the full body scans were explicit, making it a very invasive design. It dismisses people in the margins.
-            Its designed for a particular type of person.</p>
-            <p> Hanli: 'Design here is not simply aesthetics for UI, it is system design, graphic design, UI and the interaction of how these
-            things relate.'</p>
-            <p>The Design Justice Network principles sees the design as something that should deeply be 'community involved' and argues that 
-            they aren't an expert on the society group they designing for.</p>
-            <p> 'Design is collaborative' </p>
-            <p> Questions to ask: Did you see what's alreadu in place? What's already working? What was the engagement with the people you are 
-            designing for?</p>
-            <p> People from the margins often reproduce, replicate and act in the same notion of validity. Its to establish new validities.</p>
-    
-        </article>
+            <section>
+                <h2>Website Fundamentals: Making your URLs more usable</h2>
 
-        <article>
-            <h2>Website Fundamentals: Making your URLs more usable</h2>
+                <p> Keeping your URLs humen readable for simpler conveyance of information with uRLs.Keeping your URLs short for easier sharing, 
+                reducing mental overload, greater reliability and avoid giant long strings of number or characters </p>
 
-            <p> Keeping your URLs humen readable for simpler conveyance of information with uRLs.Keeping your URLs short for easier sharing, 
-            reducing mental overload, greater reliability and avoid giant long strings of number or characters </p>
+                <h2> Dates: </h2>
+                <p> Many people communicate data publication by using a top-level structure that starts with a date</p>
+                <p> /YYYY /MM/OD / - order of hierarchical signiticance</p>
+                <p> /YYYY / 00D / - 150 ordinal date order, saves to characters (shorter is better, though may not be immediately understood by 
+                readers) and communicates linearity to your year of posts.</p>
 
-            <h2> Dates: </h2>
-            <p> Many people communicate data publication by using a top-level structure that starts with a date</p>
-            <p> /YYYY /MM/OD / - order of hierarchical signiticance</p>
-            <p> /YYYY / 00D / - 150 ordinal date order, saves to characters (shorter is better, though may not be immediately understood by 
-            readers) and communicates linearity to your year of posts.</p>
+                <h2> Parsing:</h2>
+                <p> Once the browser receives the first chunk of data, it can begin parsing the information received. Parsing is the step the 
+                browser takes to turn</p>
 
-            <h2> Parsing:</h2>
-            <p> Once the browser receives the first chunk of data, it can begin parsing the information received. Parsing is the step the 
-            browser takes to turn</p>
-
-            <h2> The DOM: </h2>
-            <p> The data it receives over the network into the DOM and essoM, whieh is used by the renderer to paint a page to the screen. </p>
-            <p> The DOM is the internal representation of the markup for the browser.</p>
-            <p> The DOM is also exposed and can be manipulated through various APls in Javascript: </p>
-            <p> Even if the requested page's HTML is larger than the intial 14 KB packet, the branser will begin parsing and attempting 
-            to render an experience based</p>
-            <p> On the data it has. This is why it's important for web performance optimization to include everything the browser needs to 
-            start rendering a page, or at least a template of the page - the css and HTML needed for the first render - in the first 14KB. 
-            But before anything is rendered to the screen, the HTML, CSS and JavaScript have to be parsed.</p>
-
-        </article>
-    </main>
+                <h2> The DOM: </h2>
+                <p> The data it receives over the network into the DOM and essoM, whieh is used by the renderer to paint a page to the screen. </p>
+                <p> The DOM is the internal representation of the markup for the browser.</p>
+                <p> The DOM is also exposed and can be manipulated through various APls in Javascript: </p>
+                <p> Even if the requested page's HTML is larger than the intial 14 KB packet, the branser will begin parsing and attempting 
+                to render an experience based</p>
+                <p> On the data it has. This is why it's important for web performance optimization to include everything the browser needs to 
+                start rendering a page, or at least a template of the page - the css and HTML needed for the first render - in the first 14KB. 
+                But before anything is rendered to the screen, the HTML, CSS and JavaScript have to be parsed.</p>
+            </section>
+    </article>
 
     <script type="module" src="../Scripts/hover.js"> </script>
 
@@ -162,13 +162,15 @@
         <button id="prev">Previous</button>
         <button id="next">Next</button>
         <script>
-        window.currentIndex = 9;
+        window.currentIndex = 11;
         </script>
         <script src="../Scripts/previousNext.js" defer></script>
 
         <hr>
         <p> Brought to you by Matalame Mamabolo</p>
     </footer>
+
+    </main>
     
 </body>
 </html
