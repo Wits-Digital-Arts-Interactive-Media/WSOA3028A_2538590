@@ -49,3 +49,8 @@ header {
 .nav__links li a:hover {
     color: #0073cf;
 }
+
+.current-page {
+    color: #0073cf;
+    font-weight: bold; 
+}

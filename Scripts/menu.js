@@ -25,6 +25,7 @@ export function initialise(currentPage) {
             li.appendChild(a);
         } else {
             li.innerText = menuItem.name;
+            li.classList.add("current-page");
         }
 
         ul.appendChild(li);
