@@ -28,8 +28,8 @@ header {
 .logo {
     cursor: pointer;
     margin-right: auto;
-    width: 100px; /* Set the desired width */
-    height: auto; /* Maintain aspect ratio */
+    width: 100px; 
+    height: auto; 
 }
 
 
