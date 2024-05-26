@@ -1,74 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+
 body {
     background-color: #182b4d;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .button-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 0px;
+    display: flex; /* Flexbox layout for the container, to help the responsiveness */
+    justify-content: center; /* This center the items horizontally in the container */
+    flex-wrap: wrap; 
     padding: 0 70px; 
 }
 
 .card {
-    display: block;
-    width: calc(40% - 40px); 
-    max-width: 300px;
-    margin: 20px;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
+    display: block; /* This means each card will start on a new line and take up the full width available within their container. */
+    width: calc(40% - 40px); /*  This line sets the width of each '.card element' to be 40% of the width of its container */
+    max-width: 300px; 
+    margin: 20px; 
+    padding: 15px; 
+    text-align: center; 
     background-color: #ffffff;
-    color: #333333;
-    border-radius: 8px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333333; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* These are values for the shadow effect  */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .card img {
-    width: 100%;
+    width: 100%; 
     height: auto;
     border-radius: 8px 8px 0 0;
     margin-bottom: 10px;
 }
 
+
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px); /* Moves card up 5px when the cursor hovers over */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .card:active {
-    transform: translateY(0);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(0); /* Resets the transform when card is clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Resets the shadow when card is clicked */
 }
 
 .card:focus {
     outline: none;
-    box-shadow: 0px 0px 0px 4px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* Blue glow for accessibility */
 }
 
 .card.new-button {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 18px; 
+    font-weight: 500; 
 }
 
-h1{
-    font-size: 30px;
-    margin-bottom: 10px;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 30px;
-    color: #FFFFFF;
+h1 {
+    font-size: 30px; 
+    margin-bottom: 10px; 
+    color: #FFFFFF; 
     text-align: center; 
 }
 
-footer{
-    margin-top: 50px;
-    margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
-    color:#FFFFFF;
+footer {
+    margin-top: 50px; 
+    margin-bottom: 20px; 
+    color: #FFFFFF; 
     font-size: 15px;
-    text-align: center;
+    text-align: center; 
+}
+
+@media (max-width: 768px) { /* It means that the CSS rules below will only apply to screens whose width is 768 pixels or less */
+    .card {
+        width: calc(50% - 40px); /* Adjust width for smaller screens */
+    }
+
+    .card.new-button {
+        font-size: 1rem; /* Smaller font size on smaller screens */
+    }
+
+    .button-container {
+        padding: 0 20px; /* Reduced padding on smaller screens */
+    }
+}
+
+@media (max-width: 480px) { /*This makes sure that on smaller screens, the cards take up the maximum available space horizontally, making them easier to interact with. */
+    .card {
+        width: calc(100% - 40px); /* Card spans almost the full width of the viewport on very small screens */
+    }
 }

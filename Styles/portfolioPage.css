@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-h1{
+h1 {
     font-size: 30px;
     margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -28,7 +28,6 @@ h1{
     box-sizing: border-box;
 }
 
-
 .card img {
     width: 100%;
     height: auto;
@@ -39,7 +38,6 @@ h1{
 .card-content {
     padding: 20px;
 }
-
 
 .card-content h3 {
     font-size: 18px; 
@@ -52,19 +50,12 @@ h1{
     font-family: "Montserrat", sans-serif;
 }
 
-
 .card-content * {
     margin: 0;
     padding: 0;
 }
 
-
-.card-content * {
-    margin: 0;
-    padding: 0;
-}
-
-body{
+body {
     background-color: #182b4d;
 }
 
@@ -82,11 +73,23 @@ body{
     background-color: #0056b3; 
 }
 
-footer{
+footer {
     margin-top: 0px;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
-    color:#FFFFFF;
+    color: #FFFFFF;
     font-size: 15px;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* This changes the flex direction to column for smaller screens */
+        align-items: center; /* This aligns cards to the center horizontally on the smaller screens*/
+    }
+    .card {
+        width: 90%; 
+        max-width: none;
+        margin: 10px auto; 
+    }
 }

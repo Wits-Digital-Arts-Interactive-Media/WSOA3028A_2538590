@@ -89,3 +89,15 @@ footer{
     text-align: center;
 }
 
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Change flex direction to column for smaller screens */
+        align-items: center; /* Align cards to the center horizontally */
+    }
+    .card {
+        width: 90%; /* Adjust this value as needed */
+        max-width: none;
+        margin: 10px auto; /* Adjust margin as needed */
+    }
+}
