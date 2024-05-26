@@ -11,61 +11,57 @@
     <meta property="og:type" content="First website">
     <title>About Me</title>
     
-    <script type="module" > import {initialise} from "../Scripts/menu.js" 
-    initialise ("About Me")</script>
+    <script type="module">
+        import { initialise } from "../Scripts/menu.js";
+        initialise("About Me");
+    </script>
 
-    <link rel = "stylesheet" href = "../Styles/navigationBar.css">
-    <link rel = "stylesheet" href = "../Styles/aboutMe.css">
-
+    <link rel="stylesheet" href="../Styles/navigationBar.css">
+    <link rel="stylesheet" href="../Styles/aboutMe.css">
 </head>
 <body>
     <header>
-        <img class = "logo" src = "../Images/MataLogo.PNG" alt = "logo">
-            <nav>
-                <main>
-          
-                </main>
-            </nav>
+        <img class="logo" src="../Images/MataLogo.PNG" alt="logo">
+        <nav>
+            <main>
+            </main>
+        </nav>
     </header>
-    <main> 
-
+    <main>
         <section class="about-me">
             <h1>About Me</h1>
-            <p>This is all about me, Matalame Mamabolo. Preferably known as 'Mata'. I am currently a third-year student, studying Digital Arts at the University Of Witwatersrand and majoring in Interactive Media and Animation.</p>
-            <p>Let me tell you more about myself, I love 'Design', it fascinates me how an idea can come to life in many forms and the great impact it has in the world. I believe everything in the world was designed, from a simple chair to a complex AI software.</p>
-            <p>I have attempted to work with multiple types of design such as Graphic Design, Architectural Design, Interior Design, and Game Design. Now it's time to tackle Web Design, this website will be proof that I conquered web design or it conquered me. I hope
-            your enjoyed your stay here.</p>
-        
-            <!-- <figure>
-                <img src="../Images/MyPicture.jpg" alt="Picture of myself in a blue hoodie" width="400" height="400">
-            </figure> -->
+            <div class="about-me-content">
+                <div class="about-me-text">
+                    <p>This is all about me, Matalame Mamabolo. Preferably known as 'Mata'. I am currently a third-year student, studying Digital Arts at the University Of Witwatersrand and majoring in Interactive Media and Animation.</p>
+                    <p>Let me tell you more about myself, I love 'Design', it fascinates me how an idea can come to life in many forms and the great impact it has in the world. I believe everything in the world was designed, from a simple chair to a complex AI software.</p>
+                    <p>I have attempted to work with multiple types of design such as Graphic Design, Architectural Design, Interior Design, and Game Design. Now it's time to tackle Web Design, this website will be proof that I conquered web design or it conquered me. I hope
+                    you enjoyed your stay here.</p>
+                </div>
+                <figure>
+                    <img src="../Images/Character2.PNG" alt="Avatar Image of Matalame Mamabolo" width="500" height="600">
+                </figure>
+            </div>
         </section>
 
-        <p>Get to know me. Click the button so you can know more about </p>
-        <button id="Random Fact">Generate Fact</button>
+        <h2>Get to know me. Click the button so you can know more about</h2>
+        <button id="randomFactButton">Generate Fact</button>
         <p id="factDisplay"></p>
-    
+
         <script src="../Scripts/randomFacts.js"></script>
 
         <script>
-        const generateButton = document.getElementById('Random Fact');
-        const factDisplay = document.getElementById('factDisplay');
-    
-        generateButton.addEventListener('click', function() {
-            const randomFact = generateFact();
-            factDisplay.textContent = randomFact;
-        });
+            const generateButton = document.getElementById('randomFactButton');
+            const factDisplay = document.getElementById('factDisplay');
+
+            generateButton.addEventListener('click', function() {
+                const randomFact = generateFact();
+                factDisplay.textContent = randomFact;
+            });
         </script>
     </main>
-
     
-
     <footer>
-        <hr>
-        <p> Brought to you by Matalame Mamabolo</p>
+        <p>Brought to you by Matalame Mamabolo</p>
     </footer>
-    
-
- 
 </body>
 </html>

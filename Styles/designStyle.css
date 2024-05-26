@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #182b4d;
+}
+
+article {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.Design.Section {
+    background-color: #ffffff;
+}
+
+.Wireframes {
+    background-color: #ffffff;
+}
+
+.IxD {
+    background-color: #ffffff;
+}
+
+.Reference.Materials {
+    background-color: #ffffff;
+}
+
+.Information.Structure {
+    background-color: #ffffff;
+}
+
+.Interface.Elements {
+    background-color: #ffffff;
+}
+
+.Style.Guide {
+    background-color: #ffffff;
+}
+
+.Typhography {
+    background-color: #ffffff;
+}
+
+.Colors1, .Colors2 {
+    background-color: #ffffff;
+}
+
+.Goal {
+    background-color: #ffffff;
+}
+
+footer{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color:#FFFFFF;
+    font-size: 15px;
+    text-align: center;
+}
+
+#backToTopBtn {
+    background: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+#backToTopBtn:hover {
+    background: #555;
+}
