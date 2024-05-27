@@ -28,7 +28,7 @@ h1 {
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 20px;
-    flex: 1 1 calc(33.33% - 40px);
+    flex: 1 1 calc(33.33% - 40px); /* it's subtracting 40 pixels from 33.33% of the available space in the flex container. It ensures that the item adjusts its size based on the available space. */
     box-sizing: border-box;
 }
 
@@ -98,12 +98,12 @@ footer{
 /* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
     .card-container {
-        flex-direction: column; /* Change flex direction to column for smaller screens */
+        flex-direction: column; /* Changes the flex direction to column for smaller screens */
         align-items: center; /* Align cards to the center horizontally */
     }
     .card {
-        width: 90%; /* Adjust this value as needed */
+        width: 90%; 
         max-width: none;
-        margin: 10px auto; /* Adjust margin as needed */
+        margin: 10px auto; 
     }
 }

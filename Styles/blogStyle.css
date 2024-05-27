@@ -185,7 +185,7 @@ footer p {
     background-color: #ddd;
   }
 
-  .responsive-img {
+  .responsive-img {   /* This applies for all the images with this class*/
     width: 100%;
     max-width: 600px; 
     height: auto;

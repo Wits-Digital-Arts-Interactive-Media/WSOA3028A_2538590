@@ -47,7 +47,7 @@ body {
 
 .card:focus {
     outline: none;
-    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* Blue glow for accessibility */
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5);
 }
 
 .card.new-button {
@@ -74,15 +74,15 @@ footer {
 
 @media (max-width: 768px) { /* It means that the CSS rules below will only apply to screens whose width is 768 pixels or less */
     .card {
-        width: calc(50% - 40px); /* Adjust width for smaller screens */
+        width: calc(50% - 40px); /* Adjusts the width for smaller screens */
     }
 
     .card.new-button {
-        font-size: 1rem; /* Smaller font size on smaller screens */
+        font-size: 1rem; /* Smaller font size that will apply for smaller screens */
     }
 
     .button-container {
-        padding: 0 20px; /* Reduced padding on smaller screens */
+        padding: 0 20px; /* Reduced padding for smaller screens */
     }
 }
 

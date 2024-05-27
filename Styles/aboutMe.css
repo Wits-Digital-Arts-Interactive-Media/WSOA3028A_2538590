@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); /* Imported the Font from Google Fonts */
 
 body {
     background-color: #182b4d;
@@ -33,7 +33,7 @@ body {
     text-align: center;
 }
 
-/* Style for the Generate Fact button */
+/* The Style for the Generate Fact button */
 #randomFactButton {
     display: inline-block;
     padding: 10px 20px;

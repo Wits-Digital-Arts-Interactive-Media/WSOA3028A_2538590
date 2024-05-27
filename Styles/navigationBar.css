@@ -53,3 +53,66 @@ header {
     color: #0073cf;
     font-weight: bold; 
 }
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #edf0f1;
+    margin: 3px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__container {
+        position: relative;
+    }
+
+    .nav__links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); /* This puts the menu in the center, I tried to put it in the right corner but it covered the hamburger icon, which didnt make it clickable anymore*/
+        background-color: #0a1d3f;
+        width: 90%; 
+        padding: 10px 0;
+        text-align: center;
+        box-shadow: 0 2px 1px -2px rgba(0, 0, 0, 1);
+    }
+
+    .nav__links.show {
+        display: flex;
+    }
+
+    .nav__links li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 9999;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: #edf0f1;
+        margin: 3px 0;
+    }
+}
+
+

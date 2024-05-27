@@ -32,7 +32,25 @@ export function initialise(currentPage) {
     }
 
     nav.appendChild(ul);
+
+    // Create hamburger icon
+    const hamburger = document.createElement("div");
+    hamburger.classList.add("hamburger");
+    for (let i = 0; i < 3; i++) {
+        const bar = document.createElement("div");
+        hamburger.appendChild(bar);
+    }
+    nav.appendChild(hamburger);
+
+   // Toggle menu visibility on hamburger click
+const menuToggle = document.querySelector(".hamburger");
+menuToggle.addEventListener("click", () => {
+    const menu = document.querySelector(".nav__links");
+    menu.classList.toggle("show");
+});
+
 }
+
 
 
 
