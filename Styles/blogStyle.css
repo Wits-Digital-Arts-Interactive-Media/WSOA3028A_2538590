@@ -8,7 +8,7 @@ main {
     margin: 0 auto;
     line-height: 1.6;
     border-radius: 10px;
-    margin-top: -50px;
+    margin-top: 0px;
 }
 
 
@@ -184,3 +184,24 @@ footer p {
   .backBtn:hover {     
     background-color: #ddd;
   }
+
+.responsive-img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.responsive-img {
+  width: 60%; 
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .responsive-img {
+      width: 90%;
+  }
+}

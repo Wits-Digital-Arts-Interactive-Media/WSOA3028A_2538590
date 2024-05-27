@@ -29,7 +29,7 @@ body {
 }
 
 .about-me figure {
-    margin-top: 20px;
+    margin-top: 0px;
     text-align: center;
 }
 
@@ -73,3 +73,75 @@ footer{
 
 }
 
+
+.RandomButton {
+    background-color: #f9f9f9; 
+    padding: 100px;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center; 
+    margin-top: -55px;
+}
+
+
+.randomFact-Btn {
+    margin: 0 auto; 
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.randomFact-Btn h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#randomFactButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#randomFactButton:hover {
+    background-color: #0056b3;
+}
+
+#factDisplay {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .about-me {
+        padding: 20px;
+        margin-left: 0;
+    }
+
+    .about-me h1 {
+        font-size: 24px;
+        margin-top: 50px;
+    }
+
+    .about-me p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .about-me figure img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #randomFactButton,
+    #factDisplay {
+        margin-left: 0;
+    }
+}
