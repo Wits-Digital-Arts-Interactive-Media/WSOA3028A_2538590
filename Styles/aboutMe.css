@@ -20,6 +20,12 @@ body {
     color: #FFFFFF;
 }
 
+.about-me h2 {
+    font-size: 22px;
+    color: #FFFFFF
+}
+
+
 .about-me p {
     font-size: 15px;
     line-height: 1.6;
@@ -72,7 +78,6 @@ footer{
     text-align: center;
 
 }
-
 
 .RandomButton {
     background-color: #f9f9f9; 
@@ -128,6 +133,11 @@ footer{
     .about-me h1 {
         font-size: 24px;
         margin-top: 50px;
+    }
+
+    .contact h2 {
+        font-size: 22px;
+        color: #FFFFFF
     }
 
     .about-me p {
